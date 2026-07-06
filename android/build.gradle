@@ -1,5 +1,5 @@
 android {
-    compileSdk 34
+    compileSdk 35
     namespace = "com.serwylo.retrowars"
     sourceSets {
         main {
@@ -14,6 +14,9 @@ android {
 
     }
     packagingOptions {
+        jniLibs {
+            useLegacyPackaging = true
+        }
         exclude 'META-INF/robovm/ios/robovm.xml'
 
         // https://github.com/Tinder/Scarlet/issues/105#issuecomment-533987965
@@ -23,7 +26,7 @@ android {
     defaultConfig {
         applicationId "com.topocean.mengmaster"
         minSdkVersion 21
-        targetSdkVersion 34
+        targetSdkVersion 35
 
         // Pull these from the parent project build.gradle.
         versionCode = appVersionCode
