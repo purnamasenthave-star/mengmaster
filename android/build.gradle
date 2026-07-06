@@ -36,6 +36,9 @@ android {
         // "Cannot fit requested classes in a single dex file (# methods: 98691 > 65536)"
         // https://stackoverflow.com/a/62094000/2391921
         multiDexEnabled true
+        ndk {
+            debugSymbolLevel 'SYMBOL_TABLE'
+        }
     }
     signingConfigs {
         release {
@@ -47,7 +50,7 @@ android {
     }
     buildTypes {
         release {
-            minifyEnabled false
+            minifyEnabled true
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
             signingConfig signingConfigs.release
         }
