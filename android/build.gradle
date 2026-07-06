@@ -22,7 +22,7 @@ android {
     }
     defaultConfig {
         applicationId "com.topocean.mengmaster"
-        minSdkVersion 14
+        minSdkVersion 21
         targetSdkVersion 34
 
         // Pull these from the parent project build.gradle.
