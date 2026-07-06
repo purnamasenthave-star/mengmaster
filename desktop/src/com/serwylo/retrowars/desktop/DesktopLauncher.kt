@@ -29,7 +29,7 @@ object DesktopLauncher {
             }
 
             val config = LwjglApplicationConfiguration()
-            config.title = "Super Retro Mega Wars ${arg.joinToString(" ")}"
+            config.title = "Meng Master ${arg.joinToString(" ")}"
             LwjglApplication(RetrowarsGame(DesktopPlatform(), verbose, randomAvatar, locale), config)
 
         }

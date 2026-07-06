@@ -24,7 +24,7 @@ class AndroidPlatform(private val context: Context): Platform {
             type = "text/plain"
 
             val text = """
-                Come join me for an online game of Super Retro Mega Wars:
+                Come join me for an online game of Meng Master:
                 
                 https://play.google.com/store/apps/details?id=com.serwylo.retrowars
             """.trimIndent()
